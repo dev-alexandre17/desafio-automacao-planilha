@@ -1,7 +1,8 @@
 """
 Desafio Python - Dev Aprender
 
-Crie uma planilha com os seguintes dados:
+Descrição: Crie uma planilha com as seguintes informaçãoes
+abaixo:
 
 Nome da planilha: Meus computadores.
 Nome da página: Computadores.
@@ -12,6 +13,11 @@ Dados:
 Computador 1, 8gb Ram, R$ 2500
 Computador 2, 16gb Ram, R$ 5500
 Computador 3, 32gb Ram, R$ 2600
+
+Autor (a): Alexandre Gonçalo
+
+Data atual: 03/10/2021
+
 """
 
 # Importando biblioteca
