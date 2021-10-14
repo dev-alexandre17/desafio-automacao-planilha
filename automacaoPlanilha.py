@@ -31,63 +31,63 @@ class AutomacaoExcel:
     # Construtor da classe
 
     def __init__(self):
-        self.fileExcel = ""
-        self.computerPage = []
+        self.file_excel = ""
+        self.computer_page = []
 
     # Criando arquivo excel
 
-    def criateFile(self):
+    def criate_file(self):
         try:
-            self.fileExcel = openpyxl.Workbook()
+            self.file_excel = openpyxl.Workbook()
         except:
             print(f'Erro na criação do arquivo.')
 
     # Criar uma página no arquivo
 
-    def criatePage(self):
+    def criate_page(self):
         try:
-            self.fileExcel.create_sheet('Computadores')
+            self.file_excel.create_sheet('Computadores')
         except (ValueError, TypeError):
             print(f'Erro na criação de página.')
 
     # Selecionando a página
 
-    def choosePage(self):
+    def choose_page(self):
         try:
-            self.computerPage = self.fileExcel['Computadores']
+            self.computer_page = self.file_excel['Computadores']
         except (ValueError, TypeError):
             print(f'Erro ao seleciona a página determinada.')
 
     # Adicionando dados em colunas e linhas
 
-    def addData(self):
+    def add_data(self):
         try:
-            self.computerPage.append(['Eletrônica', 'Memórira Ram', 'Preço'])
-            self.computerPage.append(['Computador 1', '8gb Ram', 'R$ 2500'])
-            self.computerPage.append(['Computador 2', '16gb Ram', 'R$ 5500'])
-            self.computerPage.append(['Comptuador 3', '32gb Ram', 'R$ 2600'])
+            self.computer_page.append(['Eletrônica', 'Memórira Ram', 'Preço'])
+            self.computer_page.append(['Computador 1', '8gb Ram', 'R$ 2500'])
+            self.computer_page.append(['Computador 2', '16gb Ram', 'R$ 5500'])
+            self.computer_page.append(['Comptuador 3', '32gb Ram', 'R$ 2600'])
         except (ValueError, TypeError):
             print(f'Erro ao inserir dados nas colunas e linhas.')
 
     # Salvando arquivo
 
-    def saveFile(self):
+    def save_file(self):
         try:
-            self.fileExcel.save('Meus computadores.xlsx')
+            self.file_excel.save('Meus computadores.xlsx')
         except (ValueError, TypeError):
             print(f'Erro ao salvar o arquivo.')
 
 # Instanciando a classe
 
-Computador = AutomacaoExcel()
+computador = AutomacaoExcel()
 
 # Chamando métodos da classe
 
-Computador.criateFile()
-Computador.criatePage()
-Computador.choosePage()
-Computador.addData()
-Computador.saveFile()
+computador.criate_file()
+computador.criate_page()
+computador.choose_page()
+computador.add_data()
+computador.save_file()
             
             
 
