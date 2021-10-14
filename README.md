@@ -1,6 +1,6 @@
 # Desafio automação com planilha usando python
 
-*O repositório representa um desafio elaborado pelo Jonathan
+*O repositório representa um desafio elaborado pelo Jhonatan
 da Dev Aprender, aplicando conceito básicos de lógica usando
 python como linguagem definida.* 
 
@@ -9,7 +9,7 @@ POO com alguns tratamentos de exceções para questão de segurança
 da aplicação.*
 
 *Comentários foram definidos para visualizar melhor os processos
-realizados*
+realizados.*
 
 *A automação foi desenvolvida usando a biblioteca openpyxl, 
 utilizando algumas funções internas para criar o arquivo excel,
